@@ -1,10 +1,10 @@
 * Fall 2022 - Lab 10
 
-* Last name:
+* Last name: Lee
 
-* First name:
+* First name: Sam
 
-* GitHub username:
+* GitHub username: samlee03
 
 * Notes:
 
