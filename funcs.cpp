@@ -6,14 +6,19 @@
 
 //Task A
 int minutesSinceMidnight(Time time){
-    int midnightHour = 24;
-    int midnightMinute = 0;
-    if (time.m != 0){
-        midnightMinute += 60;
-        midnightHour -= 1; // Add 1 hour to 60 minutes
+    // int midnightHour = 24;
+    // int midnightMinute = 0;
+    // if (time.m != 0){
+    //     midnightMinute += 60;
+    //     midnightHour -= 1; // Add 1 hour to 60 minutes
+    // }
+    // int mins = ((midnightHour - time.h) * 60) + (midnightMinute - time.m); // Hours
+    int hour = time.h;
+    int mins = time.m;
+    while (hour > 0){
+        hour -= 1;
+        mins += 60;
     }
-    int mins = ((midnightHour - time.h) * 60) + (midnightMinute - time.m); // Hours
-     
     return mins;
 }
 int minutesUntil(Time earlier, Time later){
